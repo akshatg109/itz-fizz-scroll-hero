@@ -170,7 +170,8 @@ export default function Hero() {
             <span className="kicker-pip" aria-hidden="true" />
             YOUR DAY, WITH EXTRA FIZZ
           </p>
-          <h1 className="hero-headline" aria-label="Welcome, Itz Fizz">
+          <h1 className="hero-headline">
+            <span className="sr-only">Welcome Itz Fizz</span>
             {headline.map((word, wordIndex) => (
               <span className="headline-line" aria-hidden="true" key={word}>
                 {word.split("").map((letter, index) => (
